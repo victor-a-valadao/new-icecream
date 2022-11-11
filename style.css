@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --ff-heading: 'Staatliches', cursive;
+  --ff-texting: 'Palanquin', sans-serif;
+}
+
+
+header {
+  background: #8E9AAF;
+  text-align: center;
+  width: 377px;
+  height: 720px;
+
+}
+
+header img {
+  padding: 3.2rem 12.1rem 4.0rem;
+  
+}
+
+header h1 {
+  font-family: var(--ff-heading);
+  font-size: 4.0rem;
+  line-height: 3.4rem;
+  
+  background: #CBC0D3;
+  width: 377px;
+  height: 49px;
+
+  color: #FFFFFF;
+  
+  padding-top: 8px;
+  padding-bottom: 3.6rem;
+  
+}
+
+header p {
+  font-family: var(--ff-texting);
+  font-size: 24px;
+  line-height: 24px;
+  
+  width: 275px;
+  height: 262px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 14px auto;
+
+  color: #FFFFFF;
+}
+
+.page {
+  background: #EFF1FF;
+  position: absolute;
+  height: 720px;
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+main{
+  margin: 64px 90px 124px;
+  display: grid;
+  gap: 32px;
+  grid-template-areas: 
+    "A B E"
+    "C B F"
+    "C D F";
+}
+
+.card img {
+  width: 220px;
+  max-height: 350px;
+
+}
+
+main div:nth-child(1) {
+grid-area: A;
+}
+main div:nth-child(2) {
+grid-area: B;
+}
+main div:nth-child(3) {
+grid-area: C;
+}
+main div:nth-child(4) {
+grid-area: D;
+}
+main div:nth-child(5) {
+grid-area: E;
+}
+main div:nth-child(6) {
+grid-area: F;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  opacity: 0.5;
+}
